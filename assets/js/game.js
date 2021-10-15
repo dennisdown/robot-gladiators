@@ -9,12 +9,13 @@ let enemyName = "Roborto";
 let enemyHealth = 50;
 let enemyAttack = 12;
  
+// fight function
 var fight = function() {
     // Alert players that they are starting the round
     window.alert("Welcome to Robot Gladiators!");
  
     let promptFight = window.prompt("Would you like to FIGHT or SKIP the battle? Enter 'FIGHT' or 'SKIP to choose.")
-    // if player choses to fight, then fight
+    // if player chooses to fight, then fight
 if (promptFight === "fight" || promptFight === "FIGHT") {
     // remove enemy's health by subtracting the amount set in the playerAttack variable
     enemyHealth = enemyHealth - playerAttack;
